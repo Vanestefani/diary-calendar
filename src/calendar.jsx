@@ -3,10 +3,10 @@ import './calendar.css';
 import classNames from 'classnames';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-let MONTH_NAMES = ['January', 'February', 'March', 'April', 'May',
-     'June', 'July', 'August', 'September', 'October',
-     'November', 'December'];
-let DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+let MONTH_NAMES = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
+     'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
+     'Noviembre', 'Diciembre'];
+let DAY_NAMES = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
 
 function getTableForMonth(year, month, average) {
   let firstDayInMonth = new Date(year, month, 1)
@@ -197,7 +197,6 @@ class CalendarControl extends React.Component {
       'disabled': next > this.props.lastDate
     });
 
-
     return (
       <ul className="calendar-control-list">
         <li className="calendar-control-title">
@@ -265,4 +264,3 @@ class Calendar extends React.Component {
 }
 
 export default Calendar;
-
