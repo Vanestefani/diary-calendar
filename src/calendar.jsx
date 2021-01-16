@@ -173,23 +173,7 @@ class CalendarHeader extends React.Component {
       </nav>)
   }
 }
-class CalendarFooter  extends React.Component {
-  render() {
-    return (
 
-      <div className="calendar-footer">
-      <center>
-
-        <button>Mes</button>
-
-        <button>Hoy</button>
-
-        <button>Dia</button>
-      </center>
-    </div>
-    )
-  }
-}
 class CalendarControl extends React.Component {
   render() {
     let year = this.props.current.getFullYear(), month = this.props.current.getMonth();
@@ -250,7 +234,7 @@ class Calendar extends React.Component {
             today={this.props.today}
             lastDate={this.props.lastDate}
             firstDate={this.props.firstDate}/>
-            <CalendarFooter></CalendarFooter>
+
          </div>
       </div>);
   }

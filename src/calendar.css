@@ -46,7 +46,7 @@
 .calendar-cell.active .calendar-cell-link {
   color: #212121;
 }
-.calendar-footer button{
+button{
   background: #7474BF;  /* fallback for old browsers */
 
   padding: 6px;
@@ -54,7 +54,7 @@
   border: none;
   color: antiquewhite;
 }
-.calendar-footer button:hover{
+ button:hover{
   background: #348AC7;  /* fallback for old browsers */
   border: none;
 
